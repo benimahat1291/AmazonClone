@@ -60,7 +60,7 @@
 .header__optionBasket {
     display: flex; 
     align-items: center;
-    color: white;
+    color: white !important;
 }
 
 .header__basketCount {
