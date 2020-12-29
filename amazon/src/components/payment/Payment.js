@@ -8,6 +8,7 @@ import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js'
 import CurrencyFormat from 'react-currency-format';
 import { getBasketTotal} from "../../utils/reducer"
 import axios from "../../utils/axios"
+import { db } from "../../firebase"
 
 function Payment() {
 
@@ -30,10 +31,13 @@ function Payment() {
                 //Stripe expects total in currency subunits
                 url: `/payments/create?total=${getBasketTotal(basket) * 100}`
             });
-            getClientSecret(response.data.clientSecret);
+            setClientSecret(response.data.clientSecret);
         }
+        getClientSecret();
 
     }, [basket])
+
+    console.log("the secret is >>>", clientSecret)
 
     const handleSubmit = async (event) => {
         //swipe logic here
@@ -46,11 +50,29 @@ function Payment() {
             }
         }).then(({paymentIntent}) => {
             // paymentIntent = payment confirmation
+            db
+            .collection('users')
+            .doc(user?.uid)
+            .collection('orders')
+            .doc(paymentIntent.id)
+            .set({
+                basket: basket,
+                amount: paymentIntent.amount,
+                created: paymentIntent.created
+            })
+
+
             setSucceeded(true);
             setError(null);
             setProcessing(false);
-
+            
             history.replace('/orders')
+            
+            dispatch({
+                type: "EMPTY_BASKET"
+            })
+            
+
         })
     }
 
@@ -88,6 +110,7 @@ function Payment() {
                     <div className="payment__items">
                         {basket.map(item => (
                             <CheckoutProduct
+                                key={item.id}
                                 id={item.id}
                                 title={item.title}
                                 image={item.image}
@@ -104,7 +127,7 @@ function Payment() {
                     </div>
                     <div className="payment__details">
                         {/* stripe */}
-                        <from onSubmit={handleSubmit}>
+                        <form onSubmit={handleSubmit}>
                             <CardElement onChange={handleChange} />
 
                             <div className="payment__priceContainer">
@@ -128,7 +151,7 @@ function Payment() {
 
                             {/* Errors */}
                             {error && <div>{error}</div>}
-                        </from>
+                        </form>
                     </div>
                 </div>
             </div>

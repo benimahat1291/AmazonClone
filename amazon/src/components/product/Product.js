@@ -32,7 +32,7 @@ function Product({ id, price, title, rating, image }) {
                 </p>
                 <div className="product__rating">
                     {Array(rating).fill().map((_, i) => (
-                        <StarRateIcon />
+                        <StarRateIcon key={Math.random()}/>
                     ))}
 
                 </div>

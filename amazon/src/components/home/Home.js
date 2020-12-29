@@ -15,7 +15,7 @@ function Home() {
                         <Product
                             id="938403"
                             title="The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses Hardcover – Illustrated, September 13, 2011"
-                            price={19.99}
+                            price={19.98}
                             image="https://blog.newrelic.com/wp-content/uploads/the-lean-startup-book-400x376.png"
                             rating={3}
                         />
