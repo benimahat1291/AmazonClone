@@ -1,16 +1,73 @@
-# Amazon Clone
+## Table of Contents
 
-Deployed site can be found here:  [Amazon Clone](https://clone-bc3dc.web.app/).
+* [Description](#description)
+* [Links](#links)
+* [Screenshots](#screenshots)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Technologies Used](#technologies)
+* [Collaborators](#collaborators)
+* [Contributing](#contributing)
+* [Questions](#questions)
 
-## About
+## Description
 
-This work was made possible by the instruction from the developer at Clever Programmers. This is a fully functioning E-commerse webpage styled to look like Amazon. It is built on react, deployed to firebase using the firebase cloud function back end amd takes realtime payments. It was a great learning expeience on how to implement authentication though firebase and take payments though the stripe library. It is a great template for any site that would requrie e-comerse funcitionaity. 
+Designed to Look and function like amazon. Sign up and add items to your basket, when you are ready to purchase checkout your items and pay using your credit card
 
-### `npm start`
-
-To run this on your local server run "npm run start" on the command line. 
+This application uses firebase clould fucntions to host the Back-end and React.js for the front-end framework. 
 
 
-## Purpose
+## Links
 
-The purpose of this is for informative use only. This was a great way develope my Skills as a programmer.
+[See the Deployed Conference Planner on Heroku](https://clone-bc3dc.web.app/)
+
+## Screenshots
+
+Landing page:
+![Landing page:](amazon/public/images/landing.png)
+
+Login page:
+![Login screen:](amazon/public/images/login.png)
+
+Basket:
+![Shopping Basket](amazon/public/images/basket.png)
+
+Checkout:
+![Checkout](amazon/public/images/checkout1.png)
+
+payment:
+![Payment processing](amazon/public/images/chcekout2.png)
+
+
+
+## Installation Instructions
+
+run "npm i" in the root file of the application. 
+run "npm start" to start development server on your localhost
+
+## Usage
+
+This application is intended to demonstrate the functionalty and looks of an e-comerse website designed to look like amazon. This is not made for any comecial use. 
+
+Upon landing on the page you are presented with a simple amazon like homescreen where you can add items to your basket. Before you can checkout out make sure to loggin by signing up for an account. Once you are logged it continue to add more items or go to the checkout page to make to review your order. Once you satisfied you can proceed to checkout where you can use your use your credit card to process the payment. Make sure to not use a real card. Alternatively you can type "424242..." repetivitly for all the card field to test the functionality with this test-card information (as shown in the above screenshot). You can go to your orders page to review your history of purchaces. 
+
+## Technologies Used
+
+Firebase for authentication and cloud fucntion hosting,
+ Express.js, Node.js,
+ React.js Framework
+
+## Collaborators
+
+This app was built by Beni Mahat.
+
+## Contributing
+
+Thank your to Clever Programmers for providing the resources to implement this build. 
+
+We believe code is never finished, welcome your contributions to enhance the applications functionality. Please adhere to the Code of Conduct for the Contributer Covenant, version 2.0, at https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
+
+## Questions
+
+If you have further projects and questions, you can find me on Github: [GITHUB](https://github.com/benimahat1291). 
+please visit my portfolio to find contact information: [BENI MAHAT](https://benimahat1291.github.io/Portfolio_v2/#/). 
