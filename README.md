@@ -24,7 +24,7 @@ This application uses firebase clould fucntions to host the Back-end and React.j
 ## Screenshots
 
 Landing page:
-![Landing page:](amazon/public/images/landing.png)
+![Landing page:](./amazon/public/images/landing.png)
 
 Login page:
 ![Login screen:](amazon/public/images/login.png)
