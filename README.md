@@ -19,24 +19,24 @@ This application uses firebase clould fucntions to host the Back-end and React.j
 
 ## Links
 
-[See the Deployed Conference Planner on Heroku](https://clone-bc3dc.web.app/)
+[See the Deployed Amazon Clone on Firebase](https://clone-bc3dc.web.app/)
 
 ## Screenshots
 
 Landing page:
-![Landing page:](./amazon/public/images/landing.png)
+![Landing page:](./amazon/public/landing.png)
 
 Login page:
-![Login screen:](amazon/public/images/login.png)
+![Login screen:](amazon/public/login.png)
 
 Basket:
-![Shopping Basket](amazon/public/images/basket.png)
+![Shopping Basket](amazon/public/basket.png)
 
 Checkout:
-![Checkout](amazon/public/images/checkout1.png)
+![Checkout](amazon/public/checkout1.png)
 
 payment:
-![Payment processing](amazon/public/images/checkout2.png)
+![Payment processing](amazon/public/checkout2.png)
 
 
 
