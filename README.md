@@ -24,19 +24,19 @@ This application uses firebase clould fucntions to host the Back-end and React.j
 ## Screenshots
 
 Landing page:
-![Landing page:](./amazon/public/images/landing.png)
+![Landing page:](amazon/public/images/landing.png)
 
 Login page:
-![Login screen:](./amazon/public/images/login.png)
+![Login screen:](amazon/public/images/login.png)
 
 Basket:
-![Shopping Basket](./amazon/public/images/basket.png)
+![Shopping Basket](amazon/public/images/basket.png)
 
 Checkout:
-![Checkout](./amazon/public/images/checkout1.png)
+![Checkout](amazon/public/images/checkout1.png)
 
 payment:
-![Payment processing](./amazon/public/images/chcekout2.png)
+![Payment processing](amazon/public/images/checkout2.png)
 
 
 
